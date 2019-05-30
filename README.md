@@ -26,7 +26,7 @@ iOS工程使用的是Swift
 
 ### 2.1 使用 Cocoapods 将 flutter 引入工程中
 
-在Podfile添加以下代码, flutter_application_path为flutter工程的相对路径
+在Podfile添加以下代码, `flutter_application_path`为flutter工程的相对路径
 
 ```
 flutter_application_path = "../flutter_demo"
@@ -38,9 +38,23 @@ eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper
 
 <img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image4.png" width="100%" height="100%">
 
-然后执行pod install，安装完成如下：
+然后执行`pod install`，安装完成如下：
 
 <img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image5.png" width="100%" height="100%">
+
+### 2.2 添加Flutter的Run Script
+打开Xcode工程，选择要加入 Flutter App 的 target，选择 Build Phases，点击顶部的 + 号，选择 New Run Script Phase，然后输入以下脚本
+
+```
+
+"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh" build
+"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh" embed
+
+```
+
+如图所示
+
+<img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image6.png" width="100%" height="100%">
 
 
 

@@ -103,6 +103,7 @@
 				04C70C4B229FB269002FADAF /* Frameworks */,
 				04C70C4C229FB269002FADAF /* Resources */,
 				5EF49E738AB4AC4C68BA144E /* [CP] Embed Pods Frameworks */,
+				04C70C65229FBE12002FADAF /* Flutter Run Script */,
 			);
 			buildRules = (
 			);
@@ -161,6 +162,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04C70C65229FBE12002FADAF /* Flutter Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Flutter Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n\n";
+		};
 		5EF49E738AB4AC4C68BA144E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
