@@ -56,7 +56,9 @@ eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper
 
 <img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image6.png" width="100%" height="100%">
 
+### 2.3 工程关闭ENABLE_BITCODE
 
+Flutter混合开发还不支持bit code，在iOS工程中 Build Settings->Build Options->Enable Bitcode 设置为NO。如图所示
 
-
+<img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image7.png" width="100%" height="100%">
 
