@@ -22,5 +22,27 @@ iOS工程使用的是Swift
 
 <img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image3.png" width="100%" height="100%">
 
+## 二、iOS工程配置
+
+### 2.1 使用 Cocoapods 将 flutter 引入工程中
+
+在Podfile添加以下代码, flutter_application_path为flutter工程的相对路径
+
+```
+flutter_application_path = "../flutter_demo"
+eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+
+```
+
+如图操作见下：
+
+<img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image4.png" width="100%" height="100%">
+
+然后执行pod install，安装完成如下：
+
+<img src="https://github.com/STShenZhaoliang/flutter-ios/raw/master/images/image5.png" width="100%" height="100%">
+
+
+
 
 
